@@ -1,7 +1,7 @@
-p = float(input("Enter Principal: "))
-r = float(input("Enter Rate: "))
-t = float(input("Enter Time: "))
+import sys
+principal = float(sys.argv[1])
+rate = float(sys.argv[2])
+time = float(sys.argv[3])
 
-si = (p * r * t) / 100
-
-print("Simple Interest =", si)
+interest = (principal * rate * time) /100
+print("simple interest:",interest)
